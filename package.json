@@ -1,0 +1,30 @@
+{
+  "name": "jsalgos",
+  "version": "1.0.0",
+  "description": "A collection of solutions to classic problems using javascript.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node index.js",
+    "test": "mocha"
+  },
+  "repository": {
+    "start": "index.js",
+    "type": "git",
+    "url": "git+https://github.com/weaponsforge/jsalgos.git"
+  },
+  "keywords": [
+    "javascript",
+    "js",
+    "algorithms"
+  ],
+  "author": "weaponsforge",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/weaponsforge/jsalgos/issues"
+  },
+  "homepage": "https://github.com/weaponsforge/jsalgos#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^6.2.2"
+  }
+}

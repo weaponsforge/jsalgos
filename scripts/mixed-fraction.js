@@ -1,4 +1,4 @@
-const { findRepeating, factors }= require('./utils')
+const { factors }= require('./utils')
 
 /**
  * Converts a fraction to its lowest terms mixed fraction form
@@ -8,8 +8,6 @@ const { findRepeating, factors }= require('./utils')
 function mixedFraction(n) {
   let isFraction = (n.indexOf('/') > 0)
   let answer = ''
-  console.log(`input: ${n}`)
-  console.log(`isFraction: ${isFraction}`)
 
   if (isFraction) {
     let inputFraction = n.split('/').map(Number)
@@ -20,58 +18,49 @@ function mixedFraction(n) {
     }
 
     let evaluated = eval(n)
-    answer += (evaluated === 0) ? evaluated : ''
-    console.log(`evaluated: ${evaluated}`)
-    
-    let whole = Math.floor(Math.abs(evaluated)) * ((Math.floor(evaluated) < 0) ? -1 : 1)
-    let decimal = 0
+    let whole = Math.floor(Math.abs(evaluated)) * ((evaluated > 0) ? 1 : -1)
     let fraction = []
+    answer += (evaluated === 0) ? evaluated : ''
 
     if (evaluated === 0) {
-      return evaluated
+      return evaluated.toString()
     } else if (Math.abs(whole) >= 1) {
       // Evaluated input has a whole number
+      let numerator = Math.abs(inputFraction[0]) - (Math.abs(whole) * Math.abs(inputFraction[1]))
       answer += whole
-      decimal = evaluated - whole
-      console.log(`decimal: ${decimal}`)
 
-      if (Math.abs(decimal) > 0) {
-        let decimalDigits = decimal.toString().substr(decimal.toString().indexOf('.') + 1, decimal.toString().length)
-        let repeating = findRepeating(decimalDigits)
+      if (numerator > 0) {
+        fraction[0] = numerator
+        fraction[1] = inputFraction[1]
 
-        if (repeating !== undefined) {
-          // Decimal is repeating
-          fraction[0] = repeating
-          fraction[1] = Math.pow(10, repeating.toString().length) - 1
-          console.log(`repeating: ${repeating}`)
-        } else {
-          fraction[0] = parseInt(decimalDigits)
-          fraction[1] = Math.pow(10, decimal.toString().length)
-        }
+        // Format trailing fraction as "positive"
+        fraction = fraction.map(x => (x < 0) ? x * -1 : x)
       }
     } else {
       // Evaluated input is a decimal less than 1
       decimal = evaluated
       fraction = inputFraction
+
+      if (fraction[1] < 0) {
+        fraction = fraction.map(x => x * -1)
+      }
     }
 
-    // Find the fraction's lowest term
-    if (fraction.length > 0 && evaluated !== 0) {
+    if (fraction.length > 0) {
       let a = factors(fraction[0])
       let b = factors(fraction[1])
-      //console.log(a)
-      //console.log(b)
-  
-      // Lowest term
-      let divisor = Math.max(...a.filter(x => b.includes(x)))
-      console.log(`whole: ${whole}, decimal: ${decimal}`)
-      // console.log(`divisor: ${divisor}`)
-      answer += (answer.length > 0) ? ' ' : '' 
-      answer += fraction[0] / divisor + '/' + fraction[1] / divisor      
+      let gcf = a.filter(x => b.includes(x))
+      answer += (answer.length > 0) ? ' ' : ''
+
+      if (gcf.length > 0) {
+        let divisor = (gcf.length == 1) ? gcf[0] : Math.max(...gcf)
+        answer += (fraction[0] / divisor) + '/' + (fraction[1] / divisor)
+      } else {
+        answer += fraction[0] + '/' + fraction[1]
+      }
     }
 
-    console.log(`answer: "${answer}"`)
-    return answer
+    return answer.toString()
   } else {
     return n
   }

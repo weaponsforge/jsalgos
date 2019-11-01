@@ -5,8 +5,9 @@
  */
 const factors = function(n) {
   let fac = []
-  for (i=1; i<=n; i++){
-    fac.push((n%i == 0) ? (n/i) : 0)
+  let number = Math.abs(n)
+  for (i=1; i<=number; i++){
+    fac.push((number%i == 0) ? (number/i) : 0)
   }
   return fac.filter(x => [0,1].indexOf(x) === -1)
 }

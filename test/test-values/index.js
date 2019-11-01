@@ -1,4 +1,4 @@
-const mixedFraction = require('./mixedfraction-test')
+const mixedFraction = require('./formatduration-test')
 
 module.exports = {
   mixedFraction

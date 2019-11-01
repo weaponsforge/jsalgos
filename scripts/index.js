@@ -1,9 +1,9 @@
 const formatDuration = require('./format-duration')
 const mixedFraction = require('./mixed-fraction')
-const findRepeating = require('./utils/repeating-sequence')
+const parseStringInt = require('./parse-string-int')
 
 module.exports = {
   formatDuration,
   mixedFraction,
-  findRepeating
+  parseStringInt
 }

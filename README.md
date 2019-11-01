@@ -20,6 +20,9 @@ Methods and functions are saved inside the **/scripts** directory.
 1. **format-duration.js**  
 Accepts time input in seconds and returns a human-readable conversion format.
 
+2. **mixed-fraction.js**  
+Converts a fraction to its lowest terms mixed fraction form.
+
 
 
 ## Installation

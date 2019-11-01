@@ -1,5 +1,6 @@
   /**
-   * Find the repeating sequence of a number starting from index 0
+   * Find the repeating sequence of a number starting from index 0.
+	 * Use this to check if the decimal value is repeating, and get the repeating digits
    * @param {Number|String} number - Integer or String sequence of numbers
    * @returns {String} the repeating sequence from the input
    * @returns {undefined} if there are no repeating sequence 

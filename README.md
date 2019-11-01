@@ -1,7 +1,7 @@
 # jsalgos
 
 > A collection of solutions to classic problems using javascript.  
-> A boilterplate for basic javascript methods testing with [**mocha**](https://mochajs.org/).
+> A boilterplate for basic javascript nodejs environment and methods testing with [**mocha**](https://mochajs.org/).
 
 
 ### Dependecies
@@ -17,13 +17,13 @@
 
 Methods and functions are saved inside the **/scripts** directory.
 
-1. **format-duration.js**  
+1. **format-duration.js** - [[link]](https://www.codewars.com/kata/52742f58faf5485cae000b9a)  
 Accepts time input in seconds and returns a human-readable conversion format.
 
-2. **mixed-fraction.js**  
+2. **mixed-fraction.js** - [[link]](https://www.codewars.com/kata/556b85b433fb5e899200003f)   
 Converts a fraction to its lowest terms mixed fraction form.
 
-3. **parse-string-int.js**  
+3. **parse-string-int.js** - [[link]](https://www.codewars.com/kata/525c7c5ab6aecef16e0001a5)  
 Converts an English string of a number to its numerical value.
 
 

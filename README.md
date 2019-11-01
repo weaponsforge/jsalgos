@@ -23,6 +23,9 @@ Accepts time input in seconds and returns a human-readable conversion format.
 2. **mixed-fraction.js**  
 Converts a fraction to its lowest terms mixed fraction form.
 
+3. **parse-string-int.js**  
+Converts an English string of a number to its numerical value.
+
 
 
 ## Installation

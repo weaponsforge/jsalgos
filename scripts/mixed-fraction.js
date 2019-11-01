@@ -38,15 +38,16 @@ function mixedFraction(n) {
       }
     } else {
       // Evaluated input is a decimal less than 1
-      decimal = evaluated
       fraction = inputFraction
 
+      // Reverse the signs on the numerator & denominator
       if (fraction[1] < 0) {
         fraction = fraction.map(x => x * -1)
       }
     }
 
     if (fraction.length > 0) {
+      // Find the GCF
       let a = factors(fraction[0])
       let b = factors(fraction[1])
       let gcf = a.filter(x => b.includes(x))

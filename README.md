@@ -1,7 +1,7 @@
 # jsalgos
 
 > A collection of solutions to classic problems using javascript.  
-> Boilterplate for basic javascript methods testing with [**mocha**](https://mochajs.org/).
+> A boilterplate for basic javascript methods testing with [**mocha**](https://mochajs.org/).
 
 
 ### Dependecies
@@ -11,6 +11,14 @@
 2. Windows 10 OS 64-bit
 3. VS Code
 	- for debugging (breakpoints)
+
+
+## Content
+
+Methods and functions are saved inside the **/scripts** directory.
+
+1. **format-duration.js**  
+Accepts time input in seconds and returns a human-readable conversion format.
 
 
 

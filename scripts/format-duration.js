@@ -29,8 +29,7 @@ function formatDuration (seconds) {
   for (let key in timeInSec) {
     let t = Math.floor(time / timeInSec[key])
     if (t > 0) {
-      let str = t + ' ' + key
-      str += (t > 1) ? 's' : ''
+      let str = t + ' ' + key + ((t > 1) ? 's' : '')
       temp.push(str)
     }
     time = time % timeInSec[key]

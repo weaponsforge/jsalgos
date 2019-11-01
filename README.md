@@ -43,7 +43,7 @@ Converts an English string of a number to its numerical value.
 
 ### A. Create New Scripts
 
-1. Create a new script for **module.exports** inside **/scripts/*\.js** following the format `<METHOD-NAME>.js`
+1. Create a new script for **module.exports** inside **/scripts/\*.js** following the format `<METHOD-NAME>.js`
 2. Require the newly-created script inside **/scripts/index.js**
 3. Refer to the **Testing** and **Debugging** sections to test your new script.
 

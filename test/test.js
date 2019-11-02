@@ -21,8 +21,16 @@ tests.formatDuration.forEach((item, index) => {
 */
 
 // String to Integer Conversion
+/*
 tests.parseStringInt.forEach((item, index) => {
   it(`Test Passed: Value === ${item.answer}`, () => {
     assert.equal(method.parseStringInt(item.input), item.answer)
+  })
+})
+*/
+
+tests.sumByFactors.forEach((item, index) => {
+  it(`Test Passed: Value === ${item.answer}`, () => {
+    assert.equal(method.sumByFactors(item.input).toString(), item.answer.toString())
   })
 })

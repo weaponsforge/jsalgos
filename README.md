@@ -26,6 +26,9 @@ Converts a fraction to its lowest terms mixed fraction form.
 3. **parse-string-int.js** - [[link]](https://www.codewars.com/kata/525c7c5ab6aecef16e0001a5)  
 Converts an English string of a number to its numerical value.
 
+4. **sum-by-factors.js**  
+Generate a list of all prime factors from array elements matched with the sum of array element(s) to which it is a prime factor of.
+
 
 
 ## Installation

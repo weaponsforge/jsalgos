@@ -32,6 +32,9 @@ Generate a list of all prime factors from array elements matched with the sum of
 5. **smallest.js** - [[link]](https://www.codewars.com/kata/find-the-smallest/javascript)  
 Get the smallest combination from the input number while moving only (1) digit.
 
+6. **top-three-words.js** - [[link]](https://www.codewars.com/kata/51e056fe544cf36c410000fb)  
+Retrives the top (3) most used words from a sentence.
+
 
 
 ## Installation

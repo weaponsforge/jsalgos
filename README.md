@@ -29,6 +29,9 @@ Converts an English string of a number to its numerical value.
 4. **sum-by-factors.js** - [[link]](https://www.codewars.com/kata/54d496788776e49e6b00052f)  
 Generate a list of all prime factors from array elements matched with the sum of array element(s) to which it is a prime factor of.
 
+5. **smallest.js** - [[link]](https://www.codewars.com/kata/find-the-smallest/javascript)  
+Get the smallest combination from the input number while moving only (1) digit.
+
 
 
 ## Installation

@@ -1,5 +1,5 @@
 /**
- * Get the smallest combination from the input number
+ * Get the smallest combination from the input number while moving only (1) digit
  * @param {Number} n Any Number input 
  * @returns {Array} Array of Numbers where:
  *  [0] - Containins the smallest combination from the input

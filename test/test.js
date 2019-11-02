@@ -29,8 +29,17 @@ tests.parseStringInt.forEach((item, index) => {
 })
 */
 
+// Sum of Numbers with Prime Factors
+/*
 tests.sumByFactors.forEach((item, index) => {
   it(`Test Passed: Value === ${item.answer}`, () => {
     assert.equal(method.sumByFactors(item.input).toString(), item.answer.toString())
+  })
+})
+*/
+
+tests.smallestTest.forEach((item, index) => {
+  it(`Test Passed: Value === ${item.answer}`, () => {
+    assert.equal(method.smallest(item.input).toString(), item.answer.toString())
   })
 })

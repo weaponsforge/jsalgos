@@ -38,8 +38,18 @@ tests.sumByFactors.forEach((item, index) => {
 })
 */
 
+// Smallest Number
+/*
 tests.smallestTest.forEach((item, index) => {
   it(`Test Passed: Value === ${item.answer}`, () => {
     assert.equal(method.smallest(item.input).toString(), item.answer.toString())
+  })
+})
+*/
+
+// Top (3) Words from a Sentence
+tests.topThreeWords.forEach((item, index) => {
+  it(`Test Passed: Value === ${item.answer}`, () => {
+    assert.equal(method.topThreeWords(item.input).toString(), item.answer.toString())
   })
 })

@@ -12,12 +12,29 @@
 3. VS Code
 	- for debugging (breakpoints)
 
+### Content
 
-## Content
+1. [Scripts](https://github.com/weaponsforge/jsalgos#scripts)
+2. [Installation](https://github.com/weaponsforge/jsalgos#installation)
+3. [Usage](https://github.com/weaponsforge/jsalgos#usage)
+	- [Create New Scripts](https://github.com/weaponsforge/jsalgos#a-create-new-scripts)
+	- [Testing](https://github.com/weaponsforge/jsalgos#b-testing)
+	- [Debugging](https://github.com/weaponsforge/jsalgos#c-debugging)
+
+
+
+## Scripts
 
 ### /scripts
 
-Methods and functions are saved inside the **/scripts** directory.
+Main methods and functions are saved inside the **/scripts** directory.  
+Usage:
+
+	const methods = require('./scripts')
+	methods.formatDuration(362)
+	methods.mixedFraction('97/25')
+	methods.parseInt('one hundred and five')
+	...
 
 1. **format-duration.js** - [[link]](https://www.codewars.com/kata/52742f58faf5485cae000b9a)  
 Accepts time input in seconds and returns a human-readable conversion format.
@@ -41,7 +58,16 @@ Retrieves the top (3) most used words from a sentence.
 
 ### /scripts/utils
 
-Contains various reusable utility scripts.
+Contains various reusable utility scripts. Methods and functions are saved inside the **/scripts/utils** directory.     
+Usage:  
+
+
+	const { factors, Binary, findRepeating } = require('./scripts/utils')
+	factors(25)
+	Binary.toNumber('101')
+	findRepeating(145614561852)
+	...
+
 
 1. **factors.js**  
 Returns an array of a number's factors not including itself.

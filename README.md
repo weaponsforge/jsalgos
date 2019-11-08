@@ -15,6 +15,8 @@
 
 ## Content
 
+### /scripts
+
 Methods and functions are saved inside the **/scripts** directory.
 
 1. **format-duration.js** - [[link]](https://www.codewars.com/kata/52742f58faf5485cae000b9a)  
@@ -33,8 +35,23 @@ Generate a list of all prime factors from array elements matched with the sum of
 Get the smallest combination from the input number while moving only (1) digit.
 
 6. **top-three-words.js** - [[link]](https://www.codewars.com/kata/51e056fe544cf36c410000fb)  
-Retrives the top (3) most used words from a sentence.
+Retrieves the top (3) most used words from a sentence.
 
+
+
+### /scripts/utils
+
+Contains various reusable utility scripts.
+
+1. **factors.js**  
+Returns an array of a number's factors not including itself.
+
+2. **binary.js**  
+`toNumber`: Converts a string of binary sequence into its number format.  
+`toBinary`: Converts a Number into Binary format
+
+3. **findRepeating.js** (WIP)  
+Finds the repeating sequence of a number in `String` format.
 
 
 ## Installation

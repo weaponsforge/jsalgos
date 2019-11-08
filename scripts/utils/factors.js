@@ -1,5 +1,5 @@
 /**
- * Returns a number's factors
+ * Returns a number's factors not including itself
  * @param {Number} n Number to find the factors from
  * @returns {Array} Returns the input number's factors
  */

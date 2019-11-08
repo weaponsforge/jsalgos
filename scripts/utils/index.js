@@ -1,9 +1,9 @@
 const findRepeating = require('./repeating-sequence')
 const factors = require('./factors')
-const binaryToNumber = require('./binary-to-number')
+const Binary = require('./binary')
 
 module.exports = {
   findRepeating,
   factors,
-  binaryToNumber
+  Binary,
 }

@@ -4,6 +4,7 @@ const parseStringInt = require('./parsestringint-test')
 const sumByFactors = require('./sumbyfactors-test')
 const smallestTest = require('./smallest-test')
 const topThreeWords = require('./topthreewords-test')
+const nextBiggerNumber = require('./nextbiggernumber-test')
 
 module.exports = {
   formatDuration,
@@ -11,5 +12,6 @@ module.exports = {
   parseStringInt,
   sumByFactors,
   smallestTest,
-  topThreeWords
+  topThreeWords,
+  nextBiggerNumber
 }

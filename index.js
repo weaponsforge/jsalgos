@@ -1,4 +1,8 @@
-const script = require('./scripts')
+const { Binary } = require('./scripts/utils')
 
-let a = script.mixedFraction('-10/7')
-console.log(a)
+try {
+  const a = Binary.toBinary(1.56)
+  console.log(a)
+} catch(error) {
+  console.log(error)
+}

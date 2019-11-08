@@ -48,8 +48,18 @@ tests.smallestTest.forEach((item, index) => {
 */
 
 // Top (3) Words from a Sentence
+/*
 tests.topThreeWords.forEach((item, index) => {
   it(`Test Passed: Value === ${item.answer}`, () => {
     assert.equal(method.topThreeWords(item.input).toString(), item.answer.toString())
+  })
+})
+*/
+
+
+// Next Bigger Number
+tests.nextBiggerNumber.forEach((item, index) => {
+  it(`Test Passed: Value === ${item.answer}`, () => {
+    assert.equal(method.nextBiggerNumber(item.input), item.answer)
   })
 })

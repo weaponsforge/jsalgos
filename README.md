@@ -15,6 +15,8 @@
 ### Content
 
 1. [Scripts](https://github.com/weaponsforge/jsalgos#scripts)
+	- [main scripts](https://github.com/weaponsforge/jsalgos#scripts-1) - **/scripts**
+	- [utility scripts](https://github.com/weaponsforge/jsalgos#scriptsutils) - **/scripts/utils**
 2. [Installation](https://github.com/weaponsforge/jsalgos#installation)
 3. [Usage](https://github.com/weaponsforge/jsalgos#usage)
 	- [Create New Scripts](https://github.com/weaponsforge/jsalgos#a-create-new-scripts)
@@ -27,8 +29,9 @@
 
 ### /scripts
 
-Main methods and functions are saved inside the **/scripts** directory.  
-Usage:
+Main methods and functions are saved inside the **/scripts** directory. These are proposed solutions for [codewars](https://www.codewars.com/) problems.
+   
+#### Usage:
 
 	const methods = require('./scripts')
 	methods.formatDuration(362)
@@ -59,7 +62,8 @@ Retrieves the top (3) most used words from a sentence.
 ### /scripts/utils
 
 Contains various reusable utility scripts. Methods and functions are saved inside the **/scripts/utils** directory.     
-Usage:  
+
+#### Usage:  
 
 
 	const { factors, Binary, findRepeating } = require('./scripts/utils')

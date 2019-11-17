@@ -57,6 +57,9 @@ Get the smallest combination from the input number while moving only (1) digit.
 6. **top-three-words.js** - [[link]](https://www.codewars.com/kata/51e056fe544cf36c410000fb)  
 Retrieves the top (3) most used words from a sentence.
 
+7. **dependency-injection.js** - [[link]](https://www.codewars.com/kata/dependency-injection/train/javascript)  
+Testing for [dependency injection](https://medium.com/@maciekprzybylski/dependency-injection-in-javascript-74f8791ba7c8) where the kata's idea is to be able to execute the functions passed as arguments in any specified order.
+
 
 
 ### /scripts/utils

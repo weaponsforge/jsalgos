@@ -48,8 +48,17 @@ tests.smallestTest.forEach((item, index) => {
 */
 
 // Top (3) Words from a Sentence
+/*
 tests.topThreeWords.forEach((item, index) => {
   it(`Test Passed: Value === ${item.answer}`, () => {
     assert.equal(method.topThreeWords(item.input).toString(), item.answer.toString())
+  })
+})
+*/
+
+// Dependency Injection
+tests.dependencyInjection.forEach((item, index) => {
+  it(`Test Passed: Value === ${item.answer}`, () => {
+    assert.equal(item.input, item.answer)
   })
 })

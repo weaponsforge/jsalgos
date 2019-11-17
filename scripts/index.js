@@ -4,6 +4,7 @@ const parseStringInt = require('./parse-string-int')
 const sumByFactors = require('./sum-by-factors')
 const smallest = require('./smallest')
 const topThreeWords = require('./top-three-words')
+const DI = require('./dependency-injection')
 
 module.exports = {
   formatDuration,
@@ -11,5 +12,6 @@ module.exports = {
   parseStringInt,
   sumByFactors,
   smallest,
-  topThreeWords
+  topThreeWords,
+  DI,
 }

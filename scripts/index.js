@@ -5,6 +5,9 @@ const sumByFactors = require('./sum-by-factors')
 const smallest = require('./smallest')
 const topThreeWords = require('./top-three-words')
 const DI = require('./dependency-injection')
+const rotateArray = require('./array-rotate')
+const binaryGap = require('./binary-gap')
+const oddOccurrences = require('./odd-occurrences')
 
 module.exports = {
   formatDuration,
@@ -14,4 +17,7 @@ module.exports = {
   smallest,
   topThreeWords,
   DI,
+  rotateArray,
+  binaryGap,
+  oddOccurrences
 }

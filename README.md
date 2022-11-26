@@ -70,6 +70,9 @@ Find the largest binary gap - longest streak of consecutive zeroes between 1's i
    > A non-empty array A consisting of N integers is given. The array contains an odd number of elements, and each element of the array can be paired with another element that has the same value, except for one element that is left unpaired.
    - Goal is to write a function that, given an array A consisting of N integers fulfilling the above conditions, returns the value of the unpaired element.
 
+9. **mergesort.js**<br>
+Classic javascript implementation of the merge sort method
+
 ### /scripts/utils
 
 Contains various reusable utility scripts. Methods and functions are saved inside the **/scripts/utils** directory.

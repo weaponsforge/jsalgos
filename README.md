@@ -11,6 +11,8 @@
 2. Windows 10 OS 64-bit
 3. VS Code
 	- for debugging (breakpoints)
+> [!TIP]
+> Follow JavaScript programming best practices and patterns from [Clean Code JavaScript](https://github.com/ryanmcdermott/clean-code-javascript) while solving the CodeWars problems.
 
 ### Content
 
